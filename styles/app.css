@@ -1,6 +1,12 @@
+:root {
+  --primary-color: rgb(114 114 142);
+}
+
 body {
   background: rgb(228 219 236);
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1,
@@ -12,10 +18,13 @@ p,
 
 h1 {
   font-size: 48px;
+  margin-top: 30px;
+  color: var(--primary-color);
 }
 
-p {
-  font-size: 24px;
+p,
+.pages {
+  font-size: 18px;
 }
 
 .pages {
@@ -26,10 +35,17 @@ p {
 .pages a {
   margin: 10px;
   padding: 20px 10px;
+  color: var(--primary-color);
 }
 
-/*.homepage-link,
-.photo-link,
-.contact-link {
+a:hover {
+  color: rgb(86 47 48);
+}
 
-}*/
+.croissantchocolat {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: 20px double var(--primary-color);
+}
