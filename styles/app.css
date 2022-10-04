@@ -5,21 +5,30 @@
 body {
   background: rgb(228 219 236);
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 h1,
 p,
 .pages {
-  text-align: center;
   font-style: italic;
+  text-align: center;
 }
 
 h1 {
+  color: var(--primary-color);
   font-size: 48px;
   margin-top: 30px;
-  color: var(--primary-color);
+}
+
+img {
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  height: auto;
+  padding: 10px 10px;
+  width: 100%;
 }
 
 p,
@@ -33,19 +42,19 @@ p,
 }
 
 .pages a {
+  color: var(--primary-color);
   margin: 10px;
   padding: 20px 10px;
-  color: var(--primary-color);
 }
 
 a:hover {
   color: rgb(86 47 48);
 }
 
-.croissantchocolat {
-  display: block;
-  margin: 0 auto;
-  margin-top: 40px;
-  border-radius: 10px;
-  border: 20px double var(--primary-color);
+@media (max-width: 900px) {
+  img {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
 }
